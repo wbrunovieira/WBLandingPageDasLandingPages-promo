@@ -783,16 +783,18 @@ dd {
   line-height: 18px;
   font-weight: 600;
   padding: 20px 58px;
+  background-color: #ffb937;
 }
 
 .home5-btn-style-1:hover {
-  color: #ffffff;
+  color: #ffb937;
   box-shadow: 0px 16px 32px 0px rgba(127, 94, 225, 0.2);
   -webkit-box-shadow: 0px 16px 32px 0px rgba(127, 94, 225, 0.2);
   -moz-box-shadow: 0px 16px 32px 0px rgba(127, 94, 225, 0.2);
   -o-box-shadow: 0px 16px 32px 0px rgba(127, 94, 225, 0.2);
-  background: #0042ad;
-  border-color: #0042ad;
+  background: #fff;
+  border-color: #792990;
+  drop-shadow: 0px 16px 32px 0px rgba(127, 94, 225, 0.2);
 }
 
 .home6-btn-1 {
@@ -5495,8 +5497,8 @@ footer.home4-footer .copyright .text {
 .home5-tab-area {
   background: #792990;
   position: relative;
-  min-height: 820px;
-  padding: 0 0 120px;
+  min-height: 320px;
+  padding: 0 0 20px;
 }
 
 .home5-tab-area .home5-tab-banner {
@@ -5504,6 +5506,8 @@ footer.home4-footer .copyright .text {
   text-align: right;
   right: 0;
   bottom: -58px;
+  border: 6px solid #792990;
+  box-shadow: -23px 37px 105px -2px #1e1e1e;
 }
 
 .home5-tab-area .home5-tab-bg-1 {
@@ -5521,7 +5525,7 @@ footer.home4-footer .copyright .text {
 
 .h5-tab-menu .nav {
   display: block;
-  border-bottom: 2px solid #3385e0;
+  border-bottom: 2px solid #fff;
 }
 
 .h5-tab-menu .nav .nav-item {
@@ -5580,8 +5584,8 @@ footer.home4-footer .copyright .text {
 
 .h5-tab-contents .tab-content .tab-pane .content .title {
   color: #ffffff;
-  font-size: 70px;
-  line-height: 70px;
+  font-size: 36px;
+  line-height: 40px;
   font-weight: 600;
   margin: 31px 0 0;
 }
@@ -8450,5 +8454,14 @@ footer.home6-footer::after {
       background-position: 0px 50%;
     }
   }
+}
+
+.title-extra {
+  color: #792990;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+  margin: 31px 0 100px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

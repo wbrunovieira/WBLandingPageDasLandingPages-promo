@@ -18704,3 +18704,23 @@ var widgetsTooltip = $.ui.tooltip;
 
 
 }));
+
+$( "#tab-img" ).tabs({
+    activate: function( event, ui ) {
+        var newTabId = ui.newTab.attr("aria-controls");
+        
+        // Atualiza a imagem aqui, com base no valor de newTabId
+        var newImageSrc;
+        if (newTabId === "startup") {
+            newImageSrc = "img/sass/tab-banner.png";
+        } else if (newTabId === "business") {
+            newImageSrc = "img/sass/tab-banner2.png";
+        } else if (newTabId === "photography") {
+            newImageSrc = "img/sass/tab-banner3.png";
+        }
+
+        $(".home5-tab-banner img").attr("src", newImageSrc);
+    }
+});
+
+

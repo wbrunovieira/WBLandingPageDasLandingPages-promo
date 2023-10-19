@@ -5593,6 +5593,13 @@ footer.home4-footer .copyright .text {
   font-weight: 600;
   margin: 31px 0 0;
 }
+.h5-tab-contents .tab-content .tab-pane .content .title2 {
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
 
 .h5-tab-contents .tab-content .tab-pane .content .text {
   color: #ffffff;

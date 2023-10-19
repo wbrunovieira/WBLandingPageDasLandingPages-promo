@@ -1198,7 +1198,7 @@ header .header-container .header-right .get-quote {
 }
 
 .hero-area .hero-content .start-video .start {
-  display: inline-block;
+  disintrplay: inline-block;
   margin-right: 24px;
 }
 
@@ -1220,12 +1220,15 @@ header .header-container .header-right .get-quote {
 /* 1.3 About */
 .section-title {
   text-align: center;
-  margin: 0 0 80px;
+  margin: 0 0 2px;
+  margin-top: -120px;
+  margin-bottom: 150px;
 }
 
 .section-title .intro {
   color: #a9b5c9;
   font-weight: 600;
+  text-align: left;
 }
 
 .section-title .title {
@@ -1251,8 +1254,9 @@ header .header-container .header-right .get-quote {
 
 .section-title .text {
   font-size: 16px;
-  line-height: 28px;
-  margin: 51px 0 0;
+  line-height: 20px;
+  margin: 20px 0 0;
+  text-align: left;
 }
 
 .section-title.color-white .intro {
@@ -6133,10 +6137,10 @@ footer.home5-footer {
     linear,
     left top,
     right top,
-    from(#004dcd),
-    to(#00baff)
+    from(#270c2f),
+    to(#792990)
   );
-  background-image: linear-gradient(90deg, #004dcd 0%, #00baff 100%);
+  background-image: linear-gradient(90deg, #270c2f 0%, #792990 100%);
   padding: 259px 0 0;
 }
 
@@ -6217,7 +6221,7 @@ footer.home5-footer {
   border-radius: 50px;
   font-family: 'Rubik', sans-serif;
   border: 0;
-  background: #0075b6;
+  background: #ffb937;
   text-transform: uppercase;
   cursor: pointer;
   font-size: 14px;
@@ -6261,7 +6265,7 @@ footer.home5-footer {
 }
 
 .home5-footer-bottom-area {
-  border-top: 2px solid #4dabef;
+  border-top: 2px solid #fff;
   padding: 25px 0;
 }
 
@@ -8456,6 +8460,10 @@ footer.home6-footer::after {
   }
 }
 
+.title-extra-container {
+  text-align: center; /* Centraliza o conteúdo */
+}
+
 .title-extra {
   color: #792990;
   font-size: 36px;
@@ -8463,5 +8471,18 @@ footer.home6-footer::after {
   font-weight: 600;
   margin: 31px 0 100px;
   text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.title-extra::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* Ajuste conforme necessário */
+  left: 0;
+  right: 0;
+  height: 2px; /* Altura da linha */
+  background-color: #792990; /* Cor da linha */
+  width: 100%; /* Largura da linha */
 }
 /*# sourceMappingURL=style.css.map */

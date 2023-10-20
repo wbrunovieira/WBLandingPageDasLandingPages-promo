@@ -5481,9 +5481,21 @@ footer.home4-footer .copyright .text {
   font-weight: 600;
 }
 
+.single-h5-feature .content .intro {
+  font-family: 'Rubik', sans-serif;
+  margin: 24px 0 0;
+  color: #792990;
+}
 .single-h5-feature .content .text {
   font-family: 'Rubik', sans-serif;
   margin: 24px 0 0;
+}
+.container .text2 {
+  color: #1e1e1e;
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  line-height: 18px;
+  margin: 10px 0 0;
 }
 
 .single-h5-feature:hover {

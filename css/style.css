@@ -6275,8 +6275,12 @@ footer.home5-footer {
 .home5-footer-widget .social .social-links li a {
   display: block;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 18px;
+}
+.home5-footer-widget .social .social-links li a:hover {
+  color: #ffb937;
+  font-size: 28px;
 }
 
 .h5fw-links {

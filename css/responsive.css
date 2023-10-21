@@ -222,6 +222,10 @@
     width: 42%;
   }
 
+  .home5-tab-area img {
+    display: visible;
+  }
+
   /* home five */
   header .header-container .main-menu ul li a {
     padding: 20px 22px;
@@ -2936,4 +2940,39 @@
 
 /*big from small mobile, small from wide mobile*/
 @media only screen and (min-width: 380px) and (max-width: 480px) {
+}
+/* Custom responsive rules for the new "Bônus Exclusivos" section */
+@media only screen and (max-width: 767px) {
+  .bonus-section .title {
+    font-size: 24px;
+  }
+  .bonus-section h5 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .bonus-section p {
+    font-size: 16px;
+  }
+  .bonus-section .col-lg-4,
+  .bonus-section .col-sm-6,
+  .bonus-section .col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .bonus-section {
+    flex-direction: column;
+  }
+}
+
+/* Corrected responsive rules for .home5-tab-area and .home5-tab-banner */
+@media only screen and (max-width: 767px) {
+  .home5-tab-area .home5-tab-banner {
+    display: block; /* Corrected display property */
+    width: 100%; /* Full width on small screens */
+  }
+  #inicio,
+  #oquee {
+    margin-top: -180px;
+  }
 }

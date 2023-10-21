@@ -5975,13 +5975,13 @@ footer.home4-footer .copyright .text {
     linear,
     left top,
     right top,
-    from(#004dcd),
-    to(#00baff)
+    from(#350545),
+    to(#792990)
   );
-  background-image: linear-gradient(90deg, #004dcd 0%, #00baff 100%);
+  background-image: linear-gradient(90deg, #350545 0%, #792990 100%);
   overflow-x: hidden;
   position: relative;
-  padding: 214px 0 240px;
+  padding: 214px 0 140px;
 }
 
 .home5-pricing-area .home5-pricing-bg-text {
@@ -6021,7 +6021,7 @@ footer.home4-footer .copyright .text {
 }
 
 .home5-single-pricing .type {
-  color: #00b0fa;
+  color: #792990;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
 }
@@ -6050,7 +6050,7 @@ footer.home4-footer .copyright .text {
 }
 
 .home5-single-pricing .nb {
-  color: #00b0fa;
+  color: #ffb937;
   font-family: 'Rubik', sans-serif;
   margin: 25px 0 0;
 }
@@ -6059,6 +6059,7 @@ footer.home4-footer .copyright .text {
   padding: 0;
   list-style: none;
   margin: 21px 0 0;
+  text-align: left;
 }
 
 .home5-single-pricing .info li {

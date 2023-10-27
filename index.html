@@ -43,10 +43,14 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1286168798569000&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="path/to/jquery.fancybox.min.js" defer></script>
 
 <!-- Manychat -->
 <script src="//widget.manychat.com/797748_27016.js" defer="defer"></script>
 <script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
+
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -104,8 +108,16 @@ src="https://www.facebook.com/tr?id=1286168798569000&ev=PageView&noscript=1"
                     <div class="hero-content">
                         <h2 class="title"><span class="text-gradient">Impulsione Seu Negócio com as nossas</span> Landing Page!</h2>
                         <div class="start-video">
-                            <a href="#" class="start btn-hvr-anim-top btn-style-1 btn-hvr-anim-top">Assistir o Video</a>
-                            <a class="popup-youtube btn-ripple-out" href="https://www.youtube.com/watch?v=kcnXhShYAOY&feature=youtu.be"><i class="fas fa-play"></i></a>
+                            <a id="youtubeLink" href="https://www.youtube.com/embed/yhHNB0uFryA" class="start btn-hvr-anim-top btn-style-1 btn-hvr-anim-top">Assistir o Video</a>
+
+                            <div id="youtubeModal">
+                                <span class="close" id="closeModal">&times;</span>
+                                <iframe id="youtubeFrame" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+                              </div>
+                              
+
+                              <a class="popup-youtube btn-ripple-out" href="https://www.youtube.com/embed/yhHNB0uFryA"><i class="fas fa-play"></i></a>
+
                         </div>
                     </div>
                 </div>
@@ -522,13 +534,55 @@ src="https://www.facebook.com/tr?id=1286168798569000&ev=PageView&noscript=1"
     <script src="js/pignose.calendar.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
     <script src="js/stellarnav.min.js"></script>
     <script src="js/jquery.scrollUp.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/theme.js"></script>
+
+
+<script defer>
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("youtubeLink").addEventListener("click", function(event) {
+    event.preventDefault();
+    var modal = document.getElementById("youtubeModal");
+    var frame = document.getElementById("youtubeFrame");
+    frame.src = this.href;
+    modal.style.display = "block";
+  });
+
+  // Fechar o modal quando clicar fora dele
+  window.addEventListener("click", function(event) {
+    var modal = document.getElementById("youtubeModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+      document.getElementById("youtubeFrame").src = "";
+    }
+  });
+
+  // Fechar o modal quando clicar no botão de fechar
+  document.getElementById("closeModal").addEventListener("click", function() {
+    document.getElementById("youtubeModal").style.display = "none";
+    document.getElementById("youtubeFrame").src = "";
+  });
+
+  var youtubeButtons = document.querySelectorAll(".popup-youtube");
+  youtubeButtons.forEach(function(button) {
+    button.addEventListener("click", function(event) {
+      event.preventDefault();
+      var modal = document.getElementById("youtubeModal");
+      var frame = document.getElementById("youtubeFrame");
+      frame.src = this.href;  // A URL do vídeo está no atributo href do botão
+      modal.style.display = "block";
+    });
+  });
+});
+
+
+  </script>
+      
 </body>
 
 </html>

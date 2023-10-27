@@ -8509,4 +8509,43 @@ footer.home6-footer::after {
   background-color: #792990; /* Cor da linha */
   width: 100%; /* Largura da linha */
 }
+
+/* Estilos para o modal */
+#youtubeModal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+
+/* Estilos para o iframe */
+#youtubeFrame {
+  margin: 15% auto;
+  display: block;
+}
+
+/* Estilos para o botão de fechar */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 165px; /* ajuste conforme necessário */
+  left: 615px; /* ajuste conforme necessário */
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=style.css.map */

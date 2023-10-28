@@ -6250,6 +6250,20 @@ footer.home5-footer {
   padding: 10px 44px;
   margin: 20px 0 0;
 }
+.home5-footer-widget .suscribe .input-box button[type='submit'] {
+  color: #ffffff;
+  border-radius: 50px;
+  font-family: 'Rubik', sans-serif;
+  border: 0;
+  background: #ffb937;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  height: 60px;
+  padding: 10px 44px;
+  margin: 20px 0 0;
+}
 
 .home5-footer-widget .social {
   margin: 36px 0 0;

@@ -490,10 +490,14 @@ src="https://www.facebook.com/tr?id=1286168798569000&ev=PageView&noscript=1"
                         <div class="h5fw-subscribe home5-footer-widget">
                             <h3 class="title">Inscreva-se na nossa NewsLetter</h3>
                             <div class="suscribe">
-                                <form action="#">
+                                <form action="https://api.web3forms.com/submit" method="POST">
                                     <div class="input-box">
-                                        <input type="text" placeholder="Seu email">
-                                        <input type="submit" value="enviar">
+                                        <input type="hidden" name="access_key" value="4aeac532-e643-44c4-83c7-23d0c4b5e78e">
+                                        <div class="row">
+                                        <input type="text"  name="email" id="email" placeholder="Digite o seu e-mail" required>
+                                        <input type="hidden" name="redirect" value="https://www.wbdigitalsolutions.com/success.html">
+                                        <!-- <input type="submit" value="enviar"> -->
+                                        <button id="enviar" name="enviar" type="submit" href="#">Enviar Agora</button>
                                     </div>
                                 </form>
                             </div>
